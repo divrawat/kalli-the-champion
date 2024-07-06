@@ -29,7 +29,7 @@ export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] roun
 export const APP_NAME = 'Kalli The Champion';
 export const NavbarName = "Kalli The Champion";
 
-export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at ${DOMAIN}. It follows the story of Park Kang-tae, a man who harbored a deep regret – giving up on his dream of becoming a boxer. After a violent end as a gang member, he finds himself reincarnated as Kalli, a slave in a world obsessed with a brutal sport called "pugilist games.`;
+export const APP_DESCRIPTION = `Read ${MANGA_NAME} manhwa or manga all chapters online. Park Kang-tae, a man who harbored a deep regret – giving up on his dream of becoming a boxer. After a violent end as a gang member, he finds himself reincarnated as Kalli, a slave in a world obsessed with a brutal sport called "pugilist games.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
 
