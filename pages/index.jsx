@@ -74,6 +74,12 @@ export default function Home() {
 
   const filteredMangaLinks = RelatedMangaLinks.filter(item => item.link !== DOMAIN);
 
+  const handleRedirect = () => {
+    window.open('https://oatchaudu.net/4/7457654', '_blank');
+  };
+
+
+
   return (
     <>
       {head()}
@@ -138,7 +144,7 @@ export default function Home() {
 
 
 
-        {/* <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
+        <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
           <Link href={DOMAIN} className="hover:underline">{`Read ${MANGA_NAME} `}</Link>
         </h2>
 
@@ -146,7 +152,9 @@ export default function Home() {
 
           {chapters.map((chapter) => (
             <div className="flex hover:scale-105 active:scale-95 transition-transform" key={chapter.number}>
-              <a href={chapter.url} className="p-5 hover:underline">
+              <a
+                // onClick={handleRedirect}
+                href={chapter.url} className="p-5 hover:underline">
                 <p className="w-[300px] text-center p-5 border border-l-8 border-[black] font-bold break-words">
                   {`${MANGA_NAME}, Chapter ${chapter.number}`}
                 </p>
@@ -154,7 +162,7 @@ export default function Home() {
             </div>
           ))}
 
-        </div> */}
+        </div>
 
 
 
@@ -173,20 +181,6 @@ export default function Home() {
             ))}
           </div>
         </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
